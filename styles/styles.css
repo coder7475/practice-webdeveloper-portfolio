@@ -11,6 +11,10 @@ body {
 
 .header {
     background-color: #FFF8F3;
+    background-image: url(../assets/images/header_bg.png), url(../assets/images/developer.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, bottom left;
+
 }
 
 .primary-text {
@@ -23,6 +27,22 @@ body {
     height: 63px;
     width: 149px;   
     margin-top: 50px;
+}
+.btn-contact {
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    height: 63px;
+    width: 149px;   
+    margin-top: 50px;
+}
+
+.contact-text {
+    color: #FD6E0A;
+    /* padding-right: 5px; */
+}
+
+.download-text {
+    color: #FFF;
 }
 
 .btn-text {
@@ -38,6 +58,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0 200px;
 }
 
 nav > ul {
@@ -68,3 +89,48 @@ nav a {
     height: 61px;
 }
 
+/* banner styles */
+.banner {
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-image {
+    display: flex;
+    justify-content: center;
+    width: 584px;
+    height: 676px;
+    margin-left: 88px;
+    flex-shrink: 0;
+    /* background-color: url(assets/images/hardy.png), lightgray -192.573px 0px / 173.656% 100% no-repeat; */
+}
+
+.banner-greeting {
+    color: #474747;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-name {
+    color: #181818;
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.banner-text {
+    display: flex;
+    width: 585px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.banner-content{
+    max-width: 500px;
+    margin-left: 226px;
+    margin-right: 633px;
+}
