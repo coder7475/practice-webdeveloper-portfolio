@@ -36,6 +36,15 @@ body {
     margin-top: 50px;
 }
 
+.btn-center {
+   display: flex;
+   align-items: center;
+   background-color: #FD6E0A;
+   border-radius: 5px;
+   height: 63px;
+   width: 149px;   
+   margin: 50px 450px;
+}
 
 .download-text {
     color: #FFF;
