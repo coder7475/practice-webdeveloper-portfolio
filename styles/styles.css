@@ -50,8 +50,9 @@ body {
    background-color: #FD6E0A;
    border-radius: 5px;
    height: 63px;
-   width: 149px;   
-   margin: 50px 450px;
+   width: 149px;
+   padding: 10px;   
+   margin: 50px auto;
 }
 
 .download-text {
@@ -286,18 +287,26 @@ main {
     font-weight: 400;
 }
 
-.resume-container {
-    margin: 113px;
+.resume {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
 }
 
 .resume-title {
     color: #474747;
     font-size: 25px;
     font-weight: 700;
-    margin: 20px auto;
+    /* margin: 20px auto; */
 }
 
 .resume-name {
@@ -310,16 +319,17 @@ main {
     color: #757575;
     font-size: 16px;
     font-weight: 400;
-    margin: 20px auto;
+    /* margin: 0px auto; */
 }
 
 .education, .experience {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-around;   
-    margin: 20px;
-    padding: 20px;
+    justify-content: center;   
+    gap: 20px;
+    /* margin: 0px auto; */
+    /* padding: 20px; */
 }
 
 
@@ -329,7 +339,7 @@ main {
 
 /* what i do - skills section  */
 @media screen and (max-width: 576px){
-    .skills-container {
+    .skills-container, .resume-container {
         flex-direction: column;
     }
 }
