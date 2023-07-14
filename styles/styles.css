@@ -254,7 +254,7 @@ main {
 }
 
 #what-i-do-description {
-    padding: 30px 150px;
+    padding: 30px auto;
 }
 
 /* skills styles */
@@ -320,4 +320,16 @@ main {
     justify-content: space-around;   
     margin: 20px;
     padding: 20px;
+}
+
+
+/* All Responsive styles for mobile devices */
+
+/* mobile device - breakpoint: 576px */
+
+/* what i do - skills section  */
+@media screen and (max-width: 576px){
+    .skills-container {
+        flex-direction: column;
+    }
 }
